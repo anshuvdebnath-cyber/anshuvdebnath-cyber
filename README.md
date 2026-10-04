@@ -8,7 +8,7 @@
 
 nomoskar🖐️ I'm **Anshuv Debnath**, a 2nd-year B.Tech Computer Science & Engineering student based in **Kolkata, India**. 
 
-An enthusiastic full-stack developer with a passion for clean code, resilient system architectures, and intuitive developer experiences. Currently, I am focusing on mastering backend development in my full-stack journey, while actively exploring Flutter & Dart for cross-platform applications, as well as blockchain technology and its practical, real-world implementations.
+An enthusiastic full-stack developer with a passion for creating exciting and crazy tech stuff exploring all possibilities. Currently, I am focusing on mastering backend development in my full-stack journey, while actively exploring Flutter & Dart for cross-platform applications, as well as blockchain technology and its practical, real-world implementations.
 
 ---
 
