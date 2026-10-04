@@ -49,7 +49,7 @@ When I'm not in my IDE debugging routes or writing algorithms:
 <img src="assets/tech-stack.svg" alt="TECH STACK" width="100%" />
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,express,c,cpp" alt="Tech Stack Icons" />
+  <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,js,ts,react,nodejs,express,c,cpp" alt="Tech Stack Icons" />
 </p>
 
 ---
@@ -57,7 +57,7 @@ When I'm not in my IDE debugging routes or writing algorithms:
 <img src="assets/tools.svg" alt="TOOLS" width="100%" />
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,npm" alt="Tools Icons" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,npm,vercel" alt="Tools Icons" />
   <a href="https://httpyac.github.io/" target="_blank"><img src="assets/httpyac.svg" alt="httpYac" width="48" height="48" style="vertical-align: middle; margin-left: 6px;" /></a>
 </p>
 
