@@ -60,12 +60,6 @@ When I'm not in my IDE debugging routes or writing algorithms:
   <img src="https://skillicons.dev/icons?i=git,github,vscode,npm" alt="Tools Icons" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Antigravity-0B0B14?style=for-the-badge&logo=google&logoColor=22D3EE&labelColor=16152B" alt="Antigravity" />&nbsp;
-  <img src="https://img.shields.io/badge/Stitch-0B0B14?style=for-the-badge&logo=googlecloud&logoColor=8B5CF6&labelColor=16152B" alt="Stitch" />&nbsp;
-  <img src="https://img.shields.io/badge/OpenCode-0B0B14?style=for-the-badge&logo=openai&logoColor=2DD4BF&labelColor=16152B" alt="OpenCode" />
-</p>
-
 ---
 
 <p align="center">
