@@ -64,7 +64,7 @@ When I'm not in my IDE debugging routes or writing algorithms:
 
 <p align="center">
   <a href="https://github.com/anshuvdebnath-cyber?tab=overview">
-    <img src="assets/constellation-contrib.svg" alt="Celestial Star Constellation Contribution Chart" width="100%" />
+    <img src="assets/contribution-matrix.svg" alt="Neon Cyber-Pulse Contribution Matrix" width="100%" />
   </a>
 </p>
 
