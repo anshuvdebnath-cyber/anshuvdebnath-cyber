@@ -63,18 +63,8 @@ When I'm not in my IDE debugging routes or writing algorithms:
 ---
 
 <p align="center">
-  <img src="assets/arcade-boss-battle.svg" alt="Cyberpunk Arcade Boss Battle" width="100%" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/anshuvdebnath-cyber/anshuvdebnath-cyber/issues/new?title=Boss+Raid%3A+Photon+Torpedo+Strike&body=Player+attacks+the+Merge+Conflict+Behemoth%21+%E2%9A%94%EF%B8%8F+Dealt+damage%21&labels=boss-battle">
-    <img src="https://img.shields.io/badge/%E2%9A%94%EF%B8%8F_Attack_Boss-Critical_Hit-f43f5e?style=for-the-badge&logo=target&logoColor=white" alt="Attack Boss" />
-  </a>&nbsp;
-  <a href="https://github.com/anshuvdebnath-cyber?tab=repositories">
-    <img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_Inspect_Loot-Repositories-22d3ee?style=for-the-badge&logo=github&logoColor=white" alt="Inspect Loot" />
-  </a>&nbsp;
-  <a href="https://github.com/anshuvdebnath-cyber/anshuvdebnath-cyber/issues/new?template=guestbook.yml">
-    <img src="https://img.shields.io/badge/%E2%9A%A1_Sign_Battle_Log-Guestbook-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="Sign Battle Log" />
+  <a href="https://github.com/anshuvdebnath-cyber?tab=overview">
+    <img src="assets/contribution-chart.svg" alt="GitHub Contributions" width="100%" />
   </a>
 </p>
 
