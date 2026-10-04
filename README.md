@@ -63,7 +63,9 @@ When I'm not in my IDE debugging routes or writing algorithms:
 ---
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile Contribution Graph" width="100%" onerror="this.style.display='none'" />
+  <a href="https://github.com/anshuvdebnath-cyber?tab=overview">
+    <img src="assets/constellation-contrib.svg" alt="Celestial Star Constellation Contribution Chart" width="100%" />
+  </a>
 </p>
 
 ---
@@ -128,5 +130,5 @@ Visited my profile? Leave your mark on my README wall! Click the badge below to 
 </table>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=anshuvdebnath-cyber&color=8b5cf6&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://api.visitorbadge.io/api/visitors?path=anshuvdebnath-cyber.profile&label=PROFILE%20VIEWS&labelColor=0b0b14&countColor=8b5cf6&style=flat-square" alt="Profile Views" />
 </p>
