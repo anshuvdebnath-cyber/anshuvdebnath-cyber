@@ -17,7 +17,7 @@
     animation: livePulse 2.5s infinite ease-in-out;
   }
 
-  /* 2. Cascading Entrance Wave when loaded (Spring Pop-In across 53 weeks) */
+  /* 2. Cascading Entrance Wave on Load */
   @keyframes cascadeIn {
     0% {
       opacity: 0;
@@ -25,7 +25,7 @@
     }
     70% {
       opacity: 1;
-      transform: scale(1.12);
+      transform: scale(1.15);
     }
     100% {
       opacity: 1;
@@ -45,27 +45,31 @@
     transform: scale(1.55) translateY(-1px) !important;
     stroke: #ffffff !important;
     stroke-width: 1.4 !important;
-    filter: drop-shadow(0 0 4px #22d3ee) drop-shadow(0 0 1px #8b5cf6) !important;
+    filter: drop-shadow(0 0 5px #22d3ee) drop-shadow(0 0 1px #8b5cf6) !important;
   }
 
-  /* 4. Refined Low-Intensity Crisp Glow (No foggy blur, sharp borders and subtle brightness) */
-  @keyframes crispGlowCyan {
+  /* 4. Pop-Up Animation on Active Squares (Smooth lift and subtle glow at random intervals) */
+  @keyframes popGlowCyan {
     0%, 100% {
+      transform: scale(1) translateY(0);
       filter: brightness(1);
     }
     50% {
-      filter: brightness(1.22);
+      transform: scale(1.18) translateY(-2px);
+      filter: brightness(1.25) drop-shadow(0 0 2.5px rgba(34, 211, 238, 0.8));
       stroke: #67e8f9;
       stroke-width: 0.9;
     }
   }
 
-  @keyframes crispGlowViolet {
+  @keyframes popGlowViolet {
     0%, 100% {
+      transform: scale(1) translateY(0);
       filter: brightness(1);
     }
     50% {
-      filter: brightness(1.22);
+      transform: scale(1.18) translateY(-2px);
+      filter: brightness(1.25) drop-shadow(0 0 2.5px rgba(139, 92, 246, 0.8));
       stroke: #c4b5fd;
       stroke-width: 0.9;
     }
@@ -150,16 +154,16 @@
   .w-50 { animation-delay: 0.750s; }
   .w-51 { animation-delay: 0.765s; }
   .w-52 { animation-delay: 0.780s; }
-  .glow-0 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.2s infinite ease-in-out 0.3s; }
-  .glow-1 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.1s infinite ease-in-out 1.7s; }
-  .glow-2 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.8s infinite ease-in-out 2.4s; }
-  .glow-3 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.6s infinite ease-in-out 0.9s; }
-  .glow-4 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 5.0s infinite ease-in-out 3.1s; }
-  .glow-5 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 3.5s infinite ease-in-out 1.2s; }
-  .glow-6 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 4.4s infinite ease-in-out 2.8s; }
-  .glow-7 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 5.3s infinite ease-in-out 0.5s; }
-  .glow-8 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.9s infinite ease-in-out 3.6s; }
-  .glow-9 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.8s infinite ease-in-out 1.5s; }
+  .glow-0 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowCyan 3.4s infinite ease-in-out 0.3s; }
+  .glow-1 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowViolet 4.2s infinite ease-in-out 1.7s; }
+  .glow-2 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowCyan 3.8s infinite ease-in-out 2.4s; }
+  .glow-3 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowViolet 4.6s infinite ease-in-out 0.9s; }
+  .glow-4 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowCyan 5.0s infinite ease-in-out 3.1s; }
+  .glow-5 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowViolet 3.6s infinite ease-in-out 1.2s; }
+  .glow-6 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowCyan 4.4s infinite ease-in-out 2.8s; }
+  .glow-7 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowViolet 5.2s infinite ease-in-out 0.5s; }
+  .glow-8 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowCyan 4.0s infinite ease-in-out 3.6s; }
+  .glow-9 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, popGlowViolet 4.8s infinite ease-in-out 1.5s; }
 </style>
 <defs>
   <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
