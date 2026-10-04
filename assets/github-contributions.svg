@@ -17,58 +17,61 @@
     animation: livePulse 2.5s infinite ease-in-out;
   }
 
-  /* 2. Pop-Up Wave Animation across the 53 weeks (loops every 7.2s) */
-  @keyframes popWaveBase {
-    0%, 100% {
-      transform: translateY(0) scale(1);
-      filter: none;
+  /* 2. Cascading Entrance Wave when loaded (Spring Pop-In across 53 weeks) */
+  @keyframes cascadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
     }
-    4% {
-      transform: translateY(-2px) scale(1.05);
-      filter: brightness(1.2);
+    70% {
+      opacity: 1;
+      transform: scale(1.12);
     }
-    9% {
-      transform: translateY(0) scale(1);
-      filter: none;
-    }
-  }
-
-  @keyframes popWaveActive {
-    0%, 100% {
-      transform: translateY(0) scale(1);
-    }
-    4% {
-      transform: translateY(-3px) scale(1.14);
-      filter: brightness(1.35) drop-shadow(0 0 3px #22d3ee);
-      stroke: #ffffff;
-      stroke-width: 1.0;
-    }
-    9% {
-      transform: translateY(0) scale(1);
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
-
   .cell {
     transform-box: fill-box;
     transform-origin: center;
-    animation: popWaveBase 7.2s infinite ease-in-out;
+    animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
     transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease, stroke-width 0.2s ease;
     cursor: pointer;
   }
 
-  .cell-active {
-    animation-name: popWaveActive;
-  }
-
   /* 3. Interactive Spring Hover */
   .cell:hover {
-    transform: scale(1.55) translateY(-2px) !important;
+    transform: scale(1.55) translateY(-1px) !important;
     stroke: #ffffff !important;
     stroke-width: 1.4 !important;
-    filter: drop-shadow(0 0 5px #22d3ee) drop-shadow(0 0 1px #8b5cf6) !important;
+    filter: drop-shadow(0 0 4px #22d3ee) drop-shadow(0 0 1px #8b5cf6) !important;
   }
 
-  /* 4. Smooth Luminous Shining Sheen Wave across the grid */
+  /* 4. Refined Low-Intensity Crisp Glow (No foggy blur, sharp borders and subtle brightness) */
+  @keyframes crispGlowCyan {
+    0%, 100% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.22);
+      stroke: #67e8f9;
+      stroke-width: 0.9;
+    }
+  }
+
+  @keyframes crispGlowViolet {
+    0%, 100% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.22);
+      stroke: #c4b5fd;
+      stroke-width: 0.9;
+    }
+  }
+
+  /* 5. Smooth Luminous Shining Sheen Wave across the grid */
   @keyframes shineSweep {
     0% {
       transform: translateX(-150px) skewX(-20deg);
@@ -95,58 +98,68 @@
   }
 
   .w-0 { animation-delay: 0.000s; }
-  .w-1 { animation-delay: 0.022s; }
-  .w-2 { animation-delay: 0.044s; }
-  .w-3 { animation-delay: 0.066s; }
-  .w-4 { animation-delay: 0.088s; }
-  .w-5 { animation-delay: 0.110s; }
-  .w-6 { animation-delay: 0.132s; }
-  .w-7 { animation-delay: 0.154s; }
-  .w-8 { animation-delay: 0.176s; }
-  .w-9 { animation-delay: 0.198s; }
-  .w-10 { animation-delay: 0.220s; }
-  .w-11 { animation-delay: 0.242s; }
-  .w-12 { animation-delay: 0.264s; }
-  .w-13 { animation-delay: 0.286s; }
-  .w-14 { animation-delay: 0.308s; }
-  .w-15 { animation-delay: 0.330s; }
-  .w-16 { animation-delay: 0.352s; }
-  .w-17 { animation-delay: 0.374s; }
-  .w-18 { animation-delay: 0.396s; }
-  .w-19 { animation-delay: 0.418s; }
-  .w-20 { animation-delay: 0.440s; }
-  .w-21 { animation-delay: 0.462s; }
-  .w-22 { animation-delay: 0.484s; }
-  .w-23 { animation-delay: 0.506s; }
-  .w-24 { animation-delay: 0.528s; }
-  .w-25 { animation-delay: 0.550s; }
-  .w-26 { animation-delay: 0.572s; }
-  .w-27 { animation-delay: 0.594s; }
-  .w-28 { animation-delay: 0.616s; }
-  .w-29 { animation-delay: 0.638s; }
-  .w-30 { animation-delay: 0.660s; }
-  .w-31 { animation-delay: 0.682s; }
-  .w-32 { animation-delay: 0.704s; }
-  .w-33 { animation-delay: 0.726s; }
-  .w-34 { animation-delay: 0.748s; }
-  .w-35 { animation-delay: 0.770s; }
-  .w-36 { animation-delay: 0.792s; }
-  .w-37 { animation-delay: 0.814s; }
-  .w-38 { animation-delay: 0.836s; }
-  .w-39 { animation-delay: 0.858s; }
-  .w-40 { animation-delay: 0.880s; }
-  .w-41 { animation-delay: 0.902s; }
-  .w-42 { animation-delay: 0.924s; }
-  .w-43 { animation-delay: 0.946s; }
-  .w-44 { animation-delay: 0.968s; }
-  .w-45 { animation-delay: 0.990s; }
-  .w-46 { animation-delay: 1.012s; }
-  .w-47 { animation-delay: 1.034s; }
-  .w-48 { animation-delay: 1.056s; }
-  .w-49 { animation-delay: 1.078s; }
-  .w-50 { animation-delay: 1.100s; }
-  .w-51 { animation-delay: 1.122s; }
-  .w-52 { animation-delay: 1.144s; }
+  .w-1 { animation-delay: 0.015s; }
+  .w-2 { animation-delay: 0.030s; }
+  .w-3 { animation-delay: 0.045s; }
+  .w-4 { animation-delay: 0.060s; }
+  .w-5 { animation-delay: 0.075s; }
+  .w-6 { animation-delay: 0.090s; }
+  .w-7 { animation-delay: 0.105s; }
+  .w-8 { animation-delay: 0.120s; }
+  .w-9 { animation-delay: 0.135s; }
+  .w-10 { animation-delay: 0.150s; }
+  .w-11 { animation-delay: 0.165s; }
+  .w-12 { animation-delay: 0.180s; }
+  .w-13 { animation-delay: 0.195s; }
+  .w-14 { animation-delay: 0.210s; }
+  .w-15 { animation-delay: 0.225s; }
+  .w-16 { animation-delay: 0.240s; }
+  .w-17 { animation-delay: 0.255s; }
+  .w-18 { animation-delay: 0.270s; }
+  .w-19 { animation-delay: 0.285s; }
+  .w-20 { animation-delay: 0.300s; }
+  .w-21 { animation-delay: 0.315s; }
+  .w-22 { animation-delay: 0.330s; }
+  .w-23 { animation-delay: 0.345s; }
+  .w-24 { animation-delay: 0.360s; }
+  .w-25 { animation-delay: 0.375s; }
+  .w-26 { animation-delay: 0.390s; }
+  .w-27 { animation-delay: 0.405s; }
+  .w-28 { animation-delay: 0.420s; }
+  .w-29 { animation-delay: 0.435s; }
+  .w-30 { animation-delay: 0.450s; }
+  .w-31 { animation-delay: 0.465s; }
+  .w-32 { animation-delay: 0.480s; }
+  .w-33 { animation-delay: 0.495s; }
+  .w-34 { animation-delay: 0.510s; }
+  .w-35 { animation-delay: 0.525s; }
+  .w-36 { animation-delay: 0.540s; }
+  .w-37 { animation-delay: 0.555s; }
+  .w-38 { animation-delay: 0.570s; }
+  .w-39 { animation-delay: 0.585s; }
+  .w-40 { animation-delay: 0.600s; }
+  .w-41 { animation-delay: 0.615s; }
+  .w-42 { animation-delay: 0.630s; }
+  .w-43 { animation-delay: 0.645s; }
+  .w-44 { animation-delay: 0.660s; }
+  .w-45 { animation-delay: 0.675s; }
+  .w-46 { animation-delay: 0.690s; }
+  .w-47 { animation-delay: 0.705s; }
+  .w-48 { animation-delay: 0.720s; }
+  .w-49 { animation-delay: 0.735s; }
+  .w-50 { animation-delay: 0.750s; }
+  .w-51 { animation-delay: 0.765s; }
+  .w-52 { animation-delay: 0.780s; }
+  .glow-0 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.2s infinite ease-in-out 0.3s; }
+  .glow-1 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.1s infinite ease-in-out 1.7s; }
+  .glow-2 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.8s infinite ease-in-out 2.4s; }
+  .glow-3 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.6s infinite ease-in-out 0.9s; }
+  .glow-4 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 5.0s infinite ease-in-out 3.1s; }
+  .glow-5 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 3.5s infinite ease-in-out 1.2s; }
+  .glow-6 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 4.4s infinite ease-in-out 2.8s; }
+  .glow-7 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 5.3s infinite ease-in-out 0.5s; }
+  .glow-8 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowCyan 3.9s infinite ease-in-out 3.6s; }
+  .glow-9 { animation: cascadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards, crispGlowViolet 4.8s infinite ease-in-out 1.5s; }
 </style>
 <defs>
   <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -251,7 +264,7 @@
   <g><title>No contributions on 2025-12-12</title><rect x="183.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-9"/></g>
   <g><title>No contributions on 2025-12-13</title><rect x="183.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-9"/></g>
   <g><title>No contributions on 2025-12-14</title><rect x="198.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-10"/></g>
-  <g><title>3 contributions on 2025-12-15</title><rect x="198.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-10 cell-active"/></g>
+  <g><title>3 contributions on 2025-12-15</title><rect x="198.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-10 glow-8"/></g>
   <g><title>No contributions on 2025-12-16</title><rect x="198.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-10"/></g>
   <g><title>No contributions on 2025-12-17</title><rect x="198.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-10"/></g>
   <g><title>No contributions on 2025-12-18</title><rect x="198.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-10"/></g>
@@ -390,30 +403,30 @@
   <g><title>No contributions on 2026-04-30</title><rect x="483.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-29"/></g>
   <g><title>No contributions on 2026-05-01</title><rect x="483.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-29"/></g>
   <g><title>No contributions on 2026-05-02</title><rect x="483.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-29"/></g>
-  <g><title>3 contributions on 2026-05-03</title><rect x="498.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
+  <g><title>3 contributions on 2026-05-03</title><rect x="498.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-7"/></g>
   <g><title>No contributions on 2026-05-04</title><rect x="498.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-30"/></g>
-  <g><title>2 contributions on 2026-05-05</title><rect x="498.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-06</title><rect x="498.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-07</title><rect x="498.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-08</title><rect x="498.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
-  <g><title>3 contributions on 2026-05-09</title><rect x="498.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-10</title><rect x="513.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-11</title><rect x="513.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-12</title><rect x="513.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 cell-active"/></g>
+  <g><title>2 contributions on 2026-05-05</title><rect x="498.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-9"/></g>
+  <g><title>1 contribution on 2026-05-06</title><rect x="498.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-7"/></g>
+  <g><title>1 contribution on 2026-05-07</title><rect x="498.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-8"/></g>
+  <g><title>1 contribution on 2026-05-08</title><rect x="498.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-8"/></g>
+  <g><title>3 contributions on 2026-05-09</title><rect x="498.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-30 glow-1"/></g>
+  <g><title>1 contribution on 2026-05-10</title><rect x="513.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 glow-5"/></g>
+  <g><title>1 contribution on 2026-05-11</title><rect x="513.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 glow-3"/></g>
+  <g><title>1 contribution on 2026-05-12</title><rect x="513.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 glow-7"/></g>
   <g><title>No contributions on 2026-05-13</title><rect x="513.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-31"/></g>
-  <g><title>1 contribution on 2026-05-14</title><rect x="513.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 cell-active"/></g>
-  <g><title>3 contributions on 2026-05-15</title><rect x="513.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 cell-active"/></g>
+  <g><title>1 contribution on 2026-05-14</title><rect x="513.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 glow-8"/></g>
+  <g><title>3 contributions on 2026-05-15</title><rect x="513.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-31 glow-6"/></g>
   <g><title>No contributions on 2026-05-16</title><rect x="513.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-31"/></g>
   <g><title>No contributions on 2026-05-17</title><rect x="528.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-32"/></g>
-  <g><title>1 contribution on 2026-05-18</title><rect x="528.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 cell-active"/></g>
+  <g><title>1 contribution on 2026-05-18</title><rect x="528.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 glow-5"/></g>
   <g><title>No contributions on 2026-05-19</title><rect x="528.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-32"/></g>
-  <g><title>2 contributions on 2026-05-20</title><rect x="528.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-21</title><rect x="528.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-22</title><rect x="528.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-23</title><rect x="528.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 cell-active"/></g>
+  <g><title>2 contributions on 2026-05-20</title><rect x="528.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 glow-0"/></g>
+  <g><title>1 contribution on 2026-05-21</title><rect x="528.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 glow-7"/></g>
+  <g><title>1 contribution on 2026-05-22</title><rect x="528.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 glow-2"/></g>
+  <g><title>1 contribution on 2026-05-23</title><rect x="528.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-32 glow-1"/></g>
   <g><title>No contributions on 2026-05-24</title><rect x="543.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-33"/></g>
-  <g><title>1 contribution on 2026-05-25</title><rect x="543.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-33 cell-active"/></g>
-  <g><title>1 contribution on 2026-05-26</title><rect x="543.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-33 cell-active"/></g>
+  <g><title>1 contribution on 2026-05-25</title><rect x="543.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-33 glow-3"/></g>
+  <g><title>1 contribution on 2026-05-26</title><rect x="543.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-33 glow-4"/></g>
   <g><title>No contributions on 2026-05-27</title><rect x="543.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-33"/></g>
   <g><title>No contributions on 2026-05-28</title><rect x="543.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-33"/></g>
   <g><title>No contributions on 2026-05-29</title><rect x="543.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-33"/></g>
@@ -472,9 +485,9 @@
   <g><title>No contributions on 2026-07-21</title><rect x="663.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-41"/></g>
   <g><title>No contributions on 2026-07-22</title><rect x="663.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-41"/></g>
   <g><title>No contributions on 2026-07-23</title><rect x="663.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-41"/></g>
-  <g><title>2 contributions on 2026-07-24</title><rect x="663.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-41 cell-active"/></g>
-  <g><title>5 contributions on 2026-07-25</title><rect x="663.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-41 cell-active"/></g>
-  <g><title>1 contribution on 2026-07-26</title><rect x="678.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-42 cell-active"/></g>
+  <g><title>2 contributions on 2026-07-24</title><rect x="663.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-41 glow-5"/></g>
+  <g><title>5 contributions on 2026-07-25</title><rect x="663.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-41 glow-1"/></g>
+  <g><title>1 contribution on 2026-07-26</title><rect x="678.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-42 glow-3"/></g>
   <g><title>No contributions on 2026-07-27</title><rect x="678.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-42"/></g>
   <g><title>No contributions on 2026-07-28</title><rect x="678.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-42"/></g>
   <g><title>No contributions on 2026-07-29</title><rect x="678.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-42"/></g>
@@ -487,8 +500,8 @@
   <g><title>No contributions on 2026-08-05</title><rect x="693.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-43"/></g>
   <g><title>No contributions on 2026-08-06</title><rect x="693.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-43"/></g>
   <g><title>No contributions on 2026-08-07</title><rect x="693.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-43"/></g>
-  <g><title>2 contributions on 2026-08-08</title><rect x="693.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-43 cell-active"/></g>
-  <g><title>1 contribution on 2026-08-09</title><rect x="708.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-44 cell-active"/></g>
+  <g><title>2 contributions on 2026-08-08</title><rect x="693.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-43 glow-7"/></g>
+  <g><title>1 contribution on 2026-08-09</title><rect x="708.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-44 glow-2"/></g>
   <g><title>No contributions on 2026-08-10</title><rect x="708.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-44"/></g>
   <g><title>No contributions on 2026-08-11</title><rect x="708.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-44"/></g>
   <g><title>No contributions on 2026-08-12</title><rect x="708.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-44"/></g>
@@ -501,7 +514,7 @@
   <g><title>No contributions on 2026-08-19</title><rect x="723.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-45"/></g>
   <g><title>No contributions on 2026-08-20</title><rect x="723.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-45"/></g>
   <g><title>No contributions on 2026-08-21</title><rect x="723.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-45"/></g>
-  <g><title>11 contributions on 2026-08-22</title><rect x="723.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-45 cell-active"/></g>
+  <g><title>11 contributions on 2026-08-22</title><rect x="723.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-45 glow-8"/></g>
   <g><title>No contributions on 2026-08-23</title><rect x="738.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-46"/></g>
   <g><title>No contributions on 2026-08-24</title><rect x="738.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-46"/></g>
   <g><title>No contributions on 2026-08-25</title><rect x="738.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-46"/></g>
@@ -510,42 +523,42 @@
   <g><title>No contributions on 2026-08-28</title><rect x="738.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-46"/></g>
   <g><title>No contributions on 2026-08-29</title><rect x="738.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-46"/></g>
   <g><title>No contributions on 2026-08-30</title><rect x="753.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-47"/></g>
-  <g><title>7 contributions on 2026-08-31</title><rect x="753.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>7 contributions on 2026-09-01</title><rect x="753.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>1 contribution on 2026-09-02</title><rect x="753.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>1 contribution on 2026-09-03</title><rect x="753.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>2 contributions on 2026-09-04</title><rect x="753.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>3 contributions on 2026-09-05</title><rect x="753.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 cell-active"/></g>
-  <g><title>5 contributions on 2026-09-06</title><rect x="768.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 cell-active"/></g>
-  <g><title>4 contributions on 2026-09-07</title><rect x="768.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 cell-active"/></g>
-  <g><title>4 contributions on 2026-09-08</title><rect x="768.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 cell-active"/></g>
+  <g><title>7 contributions on 2026-08-31</title><rect x="753.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-47 glow-8"/></g>
+  <g><title>7 contributions on 2026-09-01</title><rect x="753.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell w-47 glow-3"/></g>
+  <g><title>1 contribution on 2026-09-02</title><rect x="753.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 glow-3"/></g>
+  <g><title>1 contribution on 2026-09-03</title><rect x="753.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 glow-2"/></g>
+  <g><title>2 contributions on 2026-09-04</title><rect x="753.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 glow-8"/></g>
+  <g><title>3 contributions on 2026-09-05</title><rect x="753.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-47 glow-4"/></g>
+  <g><title>5 contributions on 2026-09-06</title><rect x="768.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 glow-5"/></g>
+  <g><title>4 contributions on 2026-09-07</title><rect x="768.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 glow-3"/></g>
+  <g><title>4 contributions on 2026-09-08</title><rect x="768.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48 glow-7"/></g>
   <g><title>No contributions on 2026-09-09</title><rect x="768.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-48"/></g>
   <g><title>No contributions on 2026-09-10</title><rect x="768.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-48"/></g>
-  <g><title>17 contributions on 2026-09-11</title><rect x="768.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-48 cell-active"/></g>
-  <g><title>25 contributions on 2026-09-12</title><rect x="768.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-48 cell-active"/></g>
-  <g><title>1 contribution on 2026-09-13</title><rect x="783.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 cell-active"/></g>
-  <g><title>2 contributions on 2026-09-14</title><rect x="783.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 cell-active"/></g>
+  <g><title>17 contributions on 2026-09-11</title><rect x="768.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-48 glow-5"/></g>
+  <g><title>25 contributions on 2026-09-12</title><rect x="768.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-48 glow-1"/></g>
+  <g><title>1 contribution on 2026-09-13</title><rect x="783.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 glow-9"/></g>
+  <g><title>2 contributions on 2026-09-14</title><rect x="783.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 glow-8"/></g>
   <g><title>No contributions on 2026-09-15</title><rect x="783.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>No contributions on 2026-09-16</title><rect x="783.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>No contributions on 2026-09-17</title><rect x="783.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
-  <g><title>1 contribution on 2026-09-18</title><rect x="783.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 cell-active"/></g>
-  <g><title>16 contributions on 2026-09-19</title><rect x="783.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-49 cell-active"/></g>
-  <g><title>26 contributions on 2026-09-20</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-50 cell-active"/></g>
+  <g><title>1 contribution on 2026-09-18</title><rect x="783.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49 glow-6"/></g>
+  <g><title>16 contributions on 2026-09-19</title><rect x="783.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-49 glow-2"/></g>
+  <g><title>26 contributions on 2026-09-20</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-50 glow-8"/></g>
   <g><title>No contributions on 2026-09-21</title><rect x="798.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-50"/></g>
-  <g><title>1 contribution on 2026-09-22</title><rect x="798.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 cell-active"/></g>
+  <g><title>1 contribution on 2026-09-22</title><rect x="798.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 glow-7"/></g>
   <g><title>No contributions on 2026-09-23</title><rect x="798.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-50"/></g>
-  <g><title>1 contribution on 2026-09-24</title><rect x="798.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 cell-active"/></g>
-  <g><title>1 contribution on 2026-09-25</title><rect x="798.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 cell-active"/></g>
-  <g><title>1 contribution on 2026-09-26</title><rect x="798.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 cell-active"/></g>
+  <g><title>1 contribution on 2026-09-24</title><rect x="798.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 glow-1"/></g>
+  <g><title>1 contribution on 2026-09-25</title><rect x="798.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 glow-0"/></g>
+  <g><title>1 contribution on 2026-09-26</title><rect x="798.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50 glow-4"/></g>
   <g><title>No contributions on 2026-09-27</title><rect x="813.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-51"/></g>
   <g><title>No contributions on 2026-09-28</title><rect x="813.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-51"/></g>
-  <g><title>2 contributions on 2026-09-29</title><rect x="813.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-51 cell-active"/></g>
-  <g><title>5 contributions on 2026-09-30</title><rect x="813.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-51 cell-active"/></g>
+  <g><title>2 contributions on 2026-09-29</title><rect x="813.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-51 glow-4"/></g>
+  <g><title>5 contributions on 2026-09-30</title><rect x="813.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-51 glow-6"/></g>
   <g><title>No contributions on 2026-10-01</title><rect x="813.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-51"/></g>
   <g><title>No contributions on 2026-10-02</title><rect x="813.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-51"/></g>
   <g><title>No contributions on 2026-10-03</title><rect x="813.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-51"/></g>
-  <g><title>4 contributions on 2026-10-04</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-52 cell-active"/></g>
-  <g><title>20 contributions on 2026-10-05</title><rect x="828.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-52 cell-active"/></g>
+  <g><title>4 contributions on 2026-10-04</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-52 glow-2"/></g>
+  <g><title>20 contributions on 2026-10-05</title><rect x="828.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-52 glow-4"/></g>
   <g><title>No contributions on 2026-10-06</title><rect x="828.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
   <g><title>No contributions on 2026-10-07</title><rect x="828.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
   <g><title>No contributions on 2026-10-08</title><rect x="828.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
