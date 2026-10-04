@@ -28,43 +28,81 @@
     transform: scale(1.55) translateY(-1px) !important;
     stroke: #ffffff !important;
     stroke-width: 1.4 !important;
-    filter: drop-shadow(0 0 6px #22d3ee) drop-shadow(0 0 2px #8b5cf6) !important;
+    filter: drop-shadow(0 0 5px #22d3ee) drop-shadow(0 0 2px #8b5cf6) !important;
   }
 
-  /* 3. Organic Random Glow Keyframes */
-  @keyframes randomGlowCyan {
+  /* 3. Refined Subtle Back-Glow (Toned down, clean and not overpowering) */
+  @keyframes subtleGlowCyan {
     0%, 100% {
       filter: none;
-      opacity: 0.92;
+      opacity: 0.94;
     }
     50% {
-      filter: drop-shadow(0 0 5px #22d3ee) drop-shadow(0 0 9px #67e8f9);
+      filter: drop-shadow(0 0 2.5px rgba(34, 211, 238, 0.75));
       opacity: 1;
     }
   }
 
-  @keyframes randomGlowViolet {
+  @keyframes subtleGlowViolet {
     0%, 100% {
       filter: none;
-      opacity: 0.92;
+      opacity: 0.94;
     }
     50% {
-      filter: drop-shadow(0 0 5px #8b5cf6) drop-shadow(0 0 9px #a78bfa);
+      filter: drop-shadow(0 0 2.5px rgba(139, 92, 246, 0.75));
       opacity: 1;
     }
   }
 
-  .glow-0 { animation: randomGlowCyan 3.2s infinite ease-in-out; animation-delay: 0.3s; }
-  .glow-1 { animation: randomGlowViolet 4.1s infinite ease-in-out; animation-delay: 1.7s; }
-  .glow-2 { animation: randomGlowCyan 3.8s infinite ease-in-out; animation-delay: 2.4s; }
-  .glow-3 { animation: randomGlowViolet 4.6s infinite ease-in-out; animation-delay: 0.9s; }
-  .glow-4 { animation: randomGlowCyan 5.0s infinite ease-in-out; animation-delay: 3.1s; }
-  .glow-5 { animation: randomGlowViolet 3.5s infinite ease-in-out; animation-delay: 1.2s; }
-  .glow-6 { animation: randomGlowCyan 4.4s infinite ease-in-out; animation-delay: 2.8s; }
-  .glow-7 { animation: randomGlowViolet 5.3s infinite ease-in-out; animation-delay: 0.5s; }
-  .glow-8 { animation: randomGlowCyan 3.9s infinite ease-in-out; animation-delay: 3.6s; }
-  .glow-9 { animation: randomGlowViolet 4.8s infinite ease-in-out; animation-delay: 1.5s; }
+  /* 4. Elegant Shining Sheen Wave across the grid */
+  @keyframes shineSweep {
+    0% {
+      transform: translateX(-150px) skewX(-20deg);
+      opacity: 0;
+    }
+    4% {
+      opacity: 0.65;
+    }
+    28% {
+      opacity: 0.65;
+    }
+    35% {
+      transform: translateX(960px) skewX(-20deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(960px) skewX(-20deg);
+      opacity: 0;
+    }
+  }
+  .shine-sheen {
+    animation: shineSweep 6.5s infinite ease-in-out;
+    pointer-events: none;
+  }
+
+  .glow-0 { animation: subtleGlowCyan 3.2s infinite ease-in-out; animation-delay: 0.3s; }
+  .glow-1 { animation: subtleGlowViolet 4.1s infinite ease-in-out; animation-delay: 1.7s; }
+  .glow-2 { animation: subtleGlowCyan 3.8s infinite ease-in-out; animation-delay: 2.4s; }
+  .glow-3 { animation: subtleGlowViolet 4.6s infinite ease-in-out; animation-delay: 0.9s; }
+  .glow-4 { animation: subtleGlowCyan 5.0s infinite ease-in-out; animation-delay: 3.1s; }
+  .glow-5 { animation: subtleGlowViolet 3.5s infinite ease-in-out; animation-delay: 1.2s; }
+  .glow-6 { animation: subtleGlowCyan 4.4s infinite ease-in-out; animation-delay: 2.8s; }
+  .glow-7 { animation: subtleGlowViolet 5.3s infinite ease-in-out; animation-delay: 0.5s; }
+  .glow-8 { animation: subtleGlowCyan 3.9s infinite ease-in-out; animation-delay: 3.6s; }
+  .glow-9 { animation: subtleGlowViolet 4.8s infinite ease-in-out; animation-delay: 1.5s; }
 </style>
+<defs>
+  <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+    <stop offset="35%" stop-color="#8b5cf6" stop-opacity="0.18"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+    <stop offset="65%" stop-color="#22d3ee" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="gridClip">
+    <rect x="44" y="68" width="802" height="110" rx="4"/>
+  </clipPath>
+</defs>
   <rect width="890" height="218" rx="8" class="card-bg"/>
   <circle cx="26" cy="30" r="3.5" fill="#22d3ee" class="live-beacon"/>
   <text x="40" y="34" class="card-title">197 contributions in the last year</text>
@@ -456,6 +494,9 @@
   <g><title>No contributions on 2026-10-08</title><rect x="828.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   <g><title>No contributions on 2026-10-09</title><rect x="828.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   <g><title>No contributions on 2026-10-10</title><rect x="828.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+  <g clip-path="url(#gridClip)">
+    <rect x="0" y="68" width="80" height="110" fill="url(#shineGradient)" class="shine-sheen"/>
+  </g>
   <text x="705" y="196.0" class="label-sub">Less</text>
   <rect x="735.0" y="187.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6"/>
   <rect x="749.5" y="187.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6"/>
