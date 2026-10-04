@@ -1,0 +1,91 @@
+name: Update Guestbook
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-guestbook:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'guestbook') || startsWith(github.event.issue.title, 'Guestbook')
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Update README with Guestbook Entry
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'README.md';
+            let content = fs.readFileSync(path, 'utf8');
+
+            const issue = context.payload.issue;
+            const author = issue.user.login;
+            const authorUrl = issue.user.html_url;
+            const avatarUrl = issue.user.avatar_url;
+            
+            // Clean message: trim, limit to 200 chars, escape HTML tags
+            let rawMessage = (issue.body || 'Hi Anshuv! 👋').trim();
+            // remove multi-line bloat
+            rawMessage = rawMessage.replace(/\r?\n|\r/g, ' ');
+            let safeMessage = rawMessage
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .slice(0, 180);
+
+            const dateStr = new Date().toISOString().split('T')[0];
+            const newEntry = `<tr><td><a href="${authorUrl}"><img src="${avatarUrl}" width="36" height="36" style="border-radius:50%" /></a></td><td><strong><a href="${authorUrl}">@${author}</a></strong>: <em>${safeMessage}</em></td><td align="right"><code>${dateStr}</code></td></tr>\n`;
+
+            const startTag = '<!-- GUESTBOOK_ENTRIES_START -->';
+            const endTag = '<!-- GUESTBOOK_ENTRIES_END -->';
+
+            const startIndex = content.indexOf(startTag);
+            const endIndex = content.indexOf(endTag);
+
+            if (startIndex !== -1 && endIndex !== -1) {
+              const before = content.slice(0, startIndex + startTag.length);
+              const existingEntries = content.slice(startIndex + startTag.length, endIndex);
+              const after = content.slice(endIndex);
+
+              // Keep up to 10 latest entries to keep README tidy
+              const entries = existingEntries.trim().split('\n').filter(line => line.trim().startsWith('<tr>'));
+              entries.unshift(newEntry.trim());
+              const keptEntries = entries.slice(0, 10).join('\n');
+
+              content = `${before}\n${keptEntries}\n${after}`;
+              fs.writeFileSync(path, content, 'utf8');
+            }
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(guestbook): add new entry from @${{ github.event.issue.user.login }}" || exit 0
+          git push
+
+      - name: Comment and Close Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.payload.issue.number;
+            const author = context.payload.issue.user.login;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `✨ Thanks for stopping by and signing my guestbook, @${author}! Your message is now live on my GitHub profile. 🚀`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              state: 'closed'
+            });
