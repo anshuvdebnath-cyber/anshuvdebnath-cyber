@@ -2,15 +2,6 @@
   <img src="assets/banner.svg" alt="Anshuv Debnath Banner" width="100%" />
 </p>
 
-<p align="center">
-  <a href="https://linkedin.com/in/anshuv-debnath"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/anshuvdebnath-cyber"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></a>&nbsp;
-  <a href="mailto:anshuvdebnath@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" /></a>&nbsp;
-  <a href="https://twitter.com"><img src="https://skillicons.dev/icons?i=twitter" alt="Twitter" /></a>&nbsp;
-  <a href="https://medium.com"><img src="https://skillicons.dev/icons?i=medium" alt="Medium" /></a>&nbsp;
-  <a href="https://kaggle.com"><img src="https://skillicons.dev/icons?i=kaggle" alt="Kaggle" /></a>
-</p>
-
 ---
 
 <img src="assets/who-i-am.svg" alt="WHO I AM" width="100%" />
@@ -71,24 +62,6 @@ When I'm not in my IDE debugging routes or writing algorithms:
 
 ---
 
-### 💬 Interactive Community Guestbook
-
-Visited my profile? Leave your mark on my README wall! Click the badge below to write a quick note—a GitHub Action will automatically add your greeting to this board.
-
-<p align="center">
-  <a href="https://github.com/anshuvdebnath-cyber/anshuvdebnath-cyber/issues/new?template=guestbook.yml">
-    <img src="https://img.shields.io/badge/%E2%9C%8D%EF%B8%8F_Sign_My-Guestbook-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Sign Guestbook" />
-  </a>
-</p>
-
-<table width="100%">
-<!-- GUESTBOOK_ENTRIES_START -->
-<tr><td><a href="https://github.com/anshuvdebnath-cyber"><img src="https://github.com/anshuvdebnath-cyber.png" width="36" height="36" style="border-radius:50%" /></a></td><td><strong><a href="https://github.com/anshuvdebnath-cyber">@anshuvdebnath-cyber</a></strong>: <em>Welcome to my profile! Feel free to sign the guestbook above. 🚀</em></td><td align="right"><code>2026-10-05</code></td></tr>
-<!-- GUESTBOOK_ENTRIES_END -->
-</table>
-
----
-
 <img src="assets/top-repositories.svg" alt="TOP REPOSITORIES" width="100%" />
 
 <table width="100%">
@@ -129,7 +102,3 @@ Visited my profile? Leave your mark on my README wall! Click the badge below to 
     </td>
   </tr>
 </table>
-
-<p align="center">
-  <img src="https://api.visitorbadge.io/api/visitors?path=anshuvdebnath-cyber.profile&label=PROFILE%20VIEWS&labelColor=0b0b14&countColor=8b5cf6&style=flat-square" alt="Profile Views" />
-</p>
