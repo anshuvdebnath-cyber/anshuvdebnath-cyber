@@ -7,7 +7,7 @@
   .label-day { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 9.5px; fill: #6366f1; }
   .label-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #94a3b8; }
 
-  /* 1. Live Pulsing Beacon with comfortable spacing */
+  /* Live Pulsing Beacon with comfortable spacing */
   @keyframes livePulse {
     0%, 100% { transform: scale(1); opacity: 0.75; }
     50% { transform: scale(1.35); opacity: 1; filter: drop-shadow(0 0 4px #22d3ee); }
@@ -17,7 +17,7 @@
     animation: livePulse 2.5s infinite ease-in-out;
   }
 
-  /* 2. Realistic Periodic Ripple Wave across the 53 weeks (loops every 7.5s) */
+  /* Realistic Periodic Ripple Wave across the 53 weeks */
   @keyframes wavePulse {
     0%, 100% {
       transform: translateY(0);
@@ -58,66 +58,12 @@
     animation-name: wavePulseCyan;
   }
 
-  /* 3. Interactive Spring Hover on Every Cell */
+  /* Interactive Spring Hover on Every Cell */
   .cell:hover {
     transform: scale(1.55) translateY(-1px) !important;
     stroke: #ffffff !important;
     stroke-width: 1.4 !important;
     filter: drop-shadow(0 0 6px #22d3ee) drop-shadow(0 0 2px #8b5cf6) !important;
-  }
-
-  /* 4. High-Commit Cyber Orbital Loader (Spinning Arc) */
-  @keyframes spinLoader {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  .loader-spinner-cyan {
-    animation: spinLoader 2.2s linear infinite;
-    pointer-events: none;
-  }
-  .loader-spinner-violet {
-    animation: spinLoader 2.8s linear infinite reverse;
-    pointer-events: none;
-  }
-  .loader-spinner-micro {
-    animation: spinLoader 3.4s linear infinite;
-    pointer-events: none;
-  }
-
-  /* 5. Sonar Radar Ping Ripple for Mega-Commit Days */
-  @keyframes sonarRipple {
-    0% {
-      transform: scale(0.9);
-      opacity: 0.85;
-      stroke-width: 1.3;
-    }
-    70% {
-      transform: scale(2.3);
-      opacity: 0;
-      stroke-width: 0.3;
-    }
-    100% {
-      transform: scale(2.3);
-      opacity: 0;
-      stroke-width: 0.2;
-    }
-  }
-  .sonar-ping {
-    animation: sonarRipple 2.6s cubic-bezier(0.1, 0.5, 0.4, 1) infinite;
-    pointer-events: none;
-  }
-
-  /* 6. Intense Reactor Core Glow on Peak Days */
-  @keyframes reactorGlow {
-    0%, 100% {
-      filter: drop-shadow(0 0 2px #22d3ee) drop-shadow(0 0 4px #22d3ee66);
-    }
-    50% {
-      filter: drop-shadow(0 0 6px #22d3ee) drop-shadow(0 0 10px #67e8f9aa);
-    }
-  }
-  .cell-reactor {
-    animation: reactorGlow 2.4s infinite ease-in-out, wavePulseCyan 7.5s infinite ease-in-out;
   }
 
   .w-0 { animation-delay: 0.000s; }
@@ -535,16 +481,16 @@
   <g><title>4 contributions on 2026-09-08</title><rect x="768.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-48"/></g>
   <g><title>No contributions on 2026-09-09</title><rect x="768.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-48"/></g>
   <g><title>No contributions on 2026-09-10</title><rect x="768.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-48"/></g>
-  <g><title>17 contributions on 2026-09-11</title><rect x="768.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-48 cell-reactor"/></g>
-  <g><title>25 contributions on 2026-09-12</title><rect x="768.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-48 cell-reactor"/></g>
+  <g><title>17 contributions on 2026-09-11</title><rect x="768.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.8" class="cell w-48">    <animate attributeName="stroke" values="#2dd4bf;#22d3ee;#2dd4bf" dur="2.2s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="0.8;1.5;0.8" dur="2.2s" repeatCount="indefinite"/>  </rect></g>
+  <g><title>25 contributions on 2026-09-12</title><rect x="768.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.8" class="cell w-48">    <animate attributeName="stroke" values="#67e8f9;#ffffff;#67e8f9" dur="1.8s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="0.8;1.6;0.8" dur="1.8s" repeatCount="indefinite"/>  </rect></g>
   <g><title>1 contribution on 2026-09-13</title><rect x="783.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>2 contributions on 2026-09-14</title><rect x="783.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>No contributions on 2026-09-15</title><rect x="783.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>No contributions on 2026-09-16</title><rect x="783.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>No contributions on 2026-09-17</title><rect x="783.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-49"/></g>
   <g><title>1 contribution on 2026-09-18</title><rect x="783.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-49"/></g>
-  <g><title>16 contributions on 2026-09-19</title><rect x="783.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell w-49 cell-reactor"/></g>
-  <g><title>26 contributions on 2026-09-20</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell w-50 cell-reactor"/></g>
+  <g><title>16 contributions on 2026-09-19</title><rect x="783.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.8" class="cell w-49">    <animate attributeName="stroke" values="#2dd4bf;#22d3ee;#2dd4bf" dur="2.2s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="0.8;1.5;0.8" dur="2.2s" repeatCount="indefinite"/>  </rect></g>
+  <g><title>26 contributions on 2026-09-20</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.8" class="cell w-50">    <animate attributeName="stroke" values="#67e8f9;#ffffff;#67e8f9" dur="1.8s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="0.8;1.6;0.8" dur="1.8s" repeatCount="indefinite"/>  </rect></g>
   <g><title>No contributions on 2026-09-21</title><rect x="798.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-50"/></g>
   <g><title>1 contribution on 2026-09-22</title><rect x="798.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell w-50"/></g>
   <g><title>No contributions on 2026-09-23</title><rect x="798.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-50"/></g>
@@ -565,14 +511,14 @@
   <g><title>No contributions on 2026-10-08</title><rect x="828.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
   <g><title>No contributions on 2026-10-09</title><rect x="828.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
   <g><title>No contributions on 2026-10-10</title><rect x="828.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell w-52"/></g>
-  <circle cx="728.75" cy="167.75" r="7.8" fill="none" stroke="#2dd4bf" stroke-width="1.0" stroke-linecap="round" stroke-dasharray="8 10" class="loader-spinner-micro" style="transform-origin: 728.75px 167.75px;"/>
-  <circle cx="773.75" cy="152.75" r="8.2" fill="none" stroke="#a78bfa" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="12 12" class="loader-spinner-violet" style="transform-origin: 773.75px 152.75px;"/>
-  <circle cx="773.75" cy="167.75" r="7" fill="none" stroke="#22d3ee" class="sonar-ping" style="transform-origin: 773.75px 167.75px;"/>
-  <circle cx="773.75" cy="167.75" r="8.5" fill="none" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="14 14" class="loader-spinner-cyan" style="transform-origin: 773.75px 167.75px;"/>
-  <circle cx="788.75" cy="167.75" r="8.2" fill="none" stroke="#a78bfa" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="12 12" class="loader-spinner-violet" style="transform-origin: 788.75px 167.75px;"/>
-  <circle cx="803.75" cy="77.75" r="7" fill="none" stroke="#22d3ee" class="sonar-ping" style="transform-origin: 803.75px 77.75px;"/>
-  <circle cx="803.75" cy="77.75" r="8.5" fill="none" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="14 14" class="loader-spinner-cyan" style="transform-origin: 803.75px 77.75px;"/>
-  <circle cx="833.75" cy="92.75" r="7.8" fill="none" stroke="#2dd4bf" stroke-width="1.0" stroke-linecap="round" stroke-dasharray="8 10" class="loader-spinner-micro" style="transform-origin: 833.75px 92.75px;"/>
+  <circle cx="728.75" cy="167.75" r="8.8" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="9 11" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="0 728.75 167.75" to="360 728.75 167.75" dur="3.2s" repeatCount="indefinite"/>  </circle>
+  <circle cx="773.75" cy="152.75" r="9.2" fill="none" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="12 14" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="360 773.75 152.75" to="0 773.75 152.75" dur="2.8s" repeatCount="indefinite"/>  </circle>
+  <circle cx="773.75" cy="167.75" r="6" fill="none" stroke="#22d3ee" pointer-events="none">    <animate attributeName="r" values="6;17" dur="2.4s" repeatCount="indefinite"/>    <animate attributeName="opacity" values="0.85;0" dur="2.4s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="1.6;0.3" dur="2.4s" repeatCount="indefinite"/>  </circle>
+  <circle cx="773.75" cy="167.75" r="9.5" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 16" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="0 773.75 167.75" to="360 773.75 167.75" dur="2.2s" repeatCount="indefinite"/>  </circle>
+  <circle cx="788.75" cy="167.75" r="9.2" fill="none" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="12 14" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="360 788.75 167.75" to="0 788.75 167.75" dur="2.8s" repeatCount="indefinite"/>  </circle>
+  <circle cx="803.75" cy="77.75" r="6" fill="none" stroke="#22d3ee" pointer-events="none">    <animate attributeName="r" values="6;17" dur="2.4s" repeatCount="indefinite"/>    <animate attributeName="opacity" values="0.85;0" dur="2.4s" repeatCount="indefinite"/>    <animate attributeName="stroke-width" values="1.6;0.3" dur="2.4s" repeatCount="indefinite"/>  </circle>
+  <circle cx="803.75" cy="77.75" r="9.5" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 16" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="0 803.75 77.75" to="360 803.75 77.75" dur="2.2s" repeatCount="indefinite"/>  </circle>
+  <circle cx="833.75" cy="92.75" r="8.8" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="9 11" pointer-events="none">    <animateTransform attributeName="transform" type="rotate" from="0 833.75 92.75" to="360 833.75 92.75" dur="3.2s" repeatCount="indefinite"/>  </circle>
   <text x="705" y="196.0" class="label-sub">Less</text>
   <rect x="735.0" y="187.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6"/>
   <rect x="749.5" y="187.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6"/>
