@@ -1,0 +1,18 @@
+name: Sign Guestbook
+description: Leave a quick note or greeting on Anshuv's profile!
+title: "Guestbook: Hello from your profile visitor!"
+labels: ["guestbook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for stopping by! Write a short friendly message below and submit this issue.
+        A GitHub Action will automatically add your greeting to my README guestbook wall!
+  - type: textarea
+    id: message
+    attributes:
+      label: Your Message
+      description: Share a greeting, project feedback, or say hi!
+      placeholder: "Hey Anshuv! Loved your projects, keep building!"
+    validations:
+      required: true
