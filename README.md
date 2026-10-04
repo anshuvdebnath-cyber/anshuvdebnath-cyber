@@ -58,6 +58,7 @@ When I'm not in my IDE debugging routes or writing algorithms:
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,npm" alt="Tools Icons" />
+  <a href="https://httpyac.github.io/" target="_blank"><img src="assets/httpyac.svg" alt="httpYac" width="48" height="48" style="vertical-align: middle; margin-left: 6px;" /></a>
 </p>
 
 ---
