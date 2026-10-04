@@ -8,7 +8,7 @@
 
 Hey there! 👋 I'm **Anshuv Debnath**, a 2nd-year B.Tech Computer Science & Engineering student based in **Kolkata, India**. 
 
-I am an enthusiastic full-stack and backend developer with an obsession for resilient system architectures, clean code, and intuitive developer experiences. Currently, I'm diving headfirst into decentralized systems, exploring blockchain primitives and smart contracts to build verifiable, tamper-proof applications.
+I am an enthusiastic full-stack developer with a passion for clean code, resilient system architectures, and intuitive developer experiences. Currently, I am focusing on mastering backend development in my full-stack journey, while actively exploring Flutter & Dart for cross-platform applications, as well as blockchain technology and its practical, real-world implementations.
 
 ---
 
@@ -16,7 +16,7 @@ I am an enthusiastic full-stack and backend developer with an obsession for resi
 
 - 💻 **Full-Stack Development:** Architecting end-to-end web applications primarily using the **MERN** stack (MongoDB, Express, React, Node.js) paired with modern component-driven frontends.
 - ⚙️ **Backend & APIs:** Designing RESTful services, telemetry pipelines, and database schemas built for stability and low latency.
-- ⚡ **Competitive Hackathons:** Rapidly prototyping real-world solutions under tight sprint deadlines (such as *HimVigil*, a community hazard telemetry system for Himalayan avalanches & GLOFs).
+- ⚡ **Competitive Hackathons:** Rapidly prototyping innovative, real-world solutions under tight sprint deadlines.
 - 🚀 **Next Learning Horizons:** Deeply interested in learning blockchain architectures and Flutter cross-platform development, while actively advancing and solidifying the backend engineering foundations I'm learning right now.
 
 ---
