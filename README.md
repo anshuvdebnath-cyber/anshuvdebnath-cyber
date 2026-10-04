@@ -17,7 +17,7 @@ I am an enthusiastic full-stack and backend developer with an obsession for resi
 - 💻 **Full-Stack Development:** Architecting end-to-end web applications primarily using the **MERN** stack (MongoDB, Express, React, Node.js) paired with modern component-driven frontends.
 - ⚙️ **Backend & APIs:** Designing RESTful services, telemetry pipelines, and database schemas built for stability and low latency.
 - ⚡ **Competitive Hackathons:** Rapidly prototyping real-world solutions under tight sprint deadlines (such as *HimVigil*, a community hazard telemetry system for Himalayan avalanches & GLOFs).
-- ⛓️ **Web3 Exploration:** Studying Ethereum Virtual Machine (EVM) fundamentals, Solidity smart contracts, and decentralized data structures.
+- 🚀 **Next Learning Horizons:** Deeply interested in learning blockchain architectures and Flutter cross-platform development, while actively advancing and solidifying the backend engineering foundations I'm learning right now.
 
 ---
 
