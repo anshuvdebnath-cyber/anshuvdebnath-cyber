@@ -23,7 +23,7 @@ An enthusiastic full-stack developer with a passion for creating exciting and cr
 
 <img src="assets/vision.svg" alt="VISION" width="100%" />
 
-> *"To engineer high-impact software systems that bridge robust distributed backends with verifiable, trustless decentralized protocols — building software that solves complex real-world challenges with cryptographic transparency, speed, and uncompromising reliability."*
+> *"To evolve as a curious, versatile engineer by mastering resilient backend architectures, crafting intuitive cross-platform experiences, and unlocking the real-world utility of blockchain systems — building purposeful software that transforms emerging technology into tangible, high-impact solutions."*
 
 ---
 
