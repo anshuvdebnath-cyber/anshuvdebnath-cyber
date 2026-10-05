@@ -62,43 +62,31 @@ When I'm not in my IDE debugging routes or writing algorithms:
 
 ---
 
-<img src="assets/top-repositories.svg" alt="TOP REPOSITORIES" width="100%" />
+<img src="assets/repositories.svg" alt="REPOSITORIES" width="100%" />
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
+      <h4><a href="https://github.com/anshuvdebnath-cyber/HACK-SYNTHESIS-3.0">⚡ REPOVITAL (HACK-SYNTHESIS-3.0)</a></h4>
+      <p>Academic-grade software health & reproducibility platform powered by the MALTA mathematical framework to detect upstream abandonment and technical lag.</p>
+      <code>TypeScript</code> &bull; <code>React</code> &bull; <code>Tailwind</code> &bull; <code>Node.js</code> &bull; <code>Vite</code>
+    </td>
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/anshuvdebnath-cyber/HACKRIT-HACKATHON-2026">🏔️ HimVigil (HACKRIT-HACKATHON-2026)</a></h4>
-      <p>Himalayan hazard index & offline-ready alerting prototype for avalanches, flash floods, and GLOF risk awareness with live meteorological and DEM relief telemetry.</p>
-      <code>React</code> &bull; <code>Node.js</code> &bull; <code>FastAPI</code> &bull; <code>DEM Data</code>
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/HACK-SYNTHESIS-3.0">⚡ HACK-SYNTHESIS-3.0</a></h4>
-      <p>Full-stack hackathon project engineered for rapid responsiveness and high-throughput data processing.</p>
-      <code>JavaScript</code> &bull; <code>Express</code> &bull; <code>MongoDB</code>
+      <p>Himalayan hazard index & offline-ready alerting platform for real-time avalanche, flash flood, and GLOF risk telemetry with XGBoost and DEM data.</p>
+      <code>React</code> &bull; <code>JavaScript</code> &bull; <code>Python</code> &bull; <code>XGBoost</code> &bull; <code>Jupyter</code>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/hackathon-tracker">🎯 Hackathon Tracker</a></h4>
-      <p>Comprehensive dashboard and workflow manager for tracking hackathon milestones, team submissions, and deliverables.</p>
-      <code>React</code> &bull; <code>Tailwind</code> &bull; <code>Vite</code>
+      <h4><a href="https://github.com/anshuvdebnath-cyber/NMIT-X-ODOO-HACKATHON-2026">💼 DayFlow (NMIT-X-ODOO-HACKATHON-2026)</a></h4>
+      <p>Web-based Human Resource Management System (HRMS) developed for the Odoo Hackathon 2026 for centralized management of employees, attendance, and payroll.</p>
+      <code>TypeScript</code> &bull; <code>Frontend HRMS</code> &bull; <code>CSS3</code> &bull; <code>Responsive UI</code>
     </td>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/HABIT-TRACKER-PROTOTYPE">📊 Habit Tracker Prototype</a></h4>
-      <p>A personal productivity prototype designed to cultivate consistency with streak metrics and analytics.</p>
-      <code>JavaScript</code> &bull; <code>CSS3</code> &bull; <code>HTML5</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/replica-rush-web-redesign-2025">🎨 Replica Rush Redesign</a></h4>
-      <p>Modern responsive frontend redesign emphasizing dynamic visual interactions and clean UI architecture.</p>
-      <code>CSS Grid</code> &bull; <code>Modern UI</code> &bull; <code>JavaScript</code>
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/backend_programs">🛠️ Backend Programs</a></h4>
-      <p>Collection of robust server-side algorithms, data modeling practices, and RESTful API architecture drills.</p>
-      <code>Node.js</code> &bull; <code>C++</code> &bull; <code>OOP</code>
+      <h4><a href="https://github.com/anshuvdebnath-cyber/REPLICA-RUSH-WEB-REDESIGN-2025">🎨 Replica Rush Web Redesign</a></h4>
+      <p>Modern responsive frontend redesign emphasizing dynamic visual interactions, CSS Grid layout architecture, and high-fidelity interface design.</p>
+      <code>JavaScript</code> &bull; <code>CSS Grid</code> &bull; <code>HTML5</code> &bull; <code>Modern UI</code>
     </td>
   </tr>
 </table>
