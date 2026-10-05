@@ -31,9 +31,9 @@ An enthusiastic full-stack developer with a passion for creating exciting and cr
 
 When I'm not in my IDE debugging routes or writing algorithms:
 - 🚀 **Hackathons & Ideation:** Brainstorming and sprinting on prototype apps at tech competitions.
-- 📚 **Tech Deep Dives:** Exploring systems internals, operating system mechanics, and Web3 consensus algorithms.
-- 🕹️ **Pixel Art & Retro Games:** Appreciating minimalist retro game design, cyberpunk themes, and neon aesthetics.
-- 🤝 **Community & Peer Learning:** Collaborating with fellow builders, sharing dev insights, and pair-programming.
+- 🔬 **Tech Exploration:** Passionate about exploring new technologies, discovering cutting-edge tools, and figuring out how to effectively implement them.
+- 🏋️ **Fitness & Discipline:** Hitting the gym to stay active, disciplined, and recharge beyond university academics and study sessions.
+- 🧭 **Weekend Adventures:** Exploring new places and traveling to interesting spots whenever free on the weekends.
 
 ---
 
