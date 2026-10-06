@@ -1,0 +1,46 @@
+name: Update Contribution Chart
+
+on:
+  schedule:
+    - cron: "0 */2 * * *" # Runs every 2 hours automatically to capture commits across all repos
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/github-contributions.svg"
+      - "assets/contribution-chart.svg"
+      - "assets/contribution-matrix.svg"
+      - "assets/constellation-contrib.svg"
+      - "profile-3d-contrib/**"
+  workflow_dispatch: # Allows manual on-demand trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate live contribution SVG
+        run: |
+          python scripts/generate_contributions.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-contributions.svg assets/contribution-chart.svg assets/contribution-matrix.svg assets/constellation-contrib.svg README.md
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(contrib): auto-update live contribution chart [skip ci]"
+            git push
+          else
+            echo "No changes in contribution data."
+          fi
