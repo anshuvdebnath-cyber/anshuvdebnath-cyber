@@ -5,7 +5,7 @@ import sys
 import shutil
 from datetime import datetime
 
-USERNAME = "anshuvdebnath-cyber"
+USERNAME = os.environ.get("GITHUB_REPOSITORY_OWNER", "anshuvdebnath-cyber")
 CONTRIB_URL = f"https://github.com/users/{USERNAME}/contributions"
 
 COLOR_LEVELS = {
@@ -49,19 +49,6 @@ def parse_contributions(html):
             "level": level,
             "tooltip": tip
         }
-
-    # Ensure Wednesday, October 7th (col 52, row 3) is active
-    if (52, 3) not in days_data or days_data[(52, 3)]["level"] == 0:
-        days_data[(52, 3)] = {
-            "date": "2026-10-07",
-            "level": 1,
-            "tooltip": "1 contribution on October 7th."
-        }
-        try:
-            val = int(total_count.replace(",", ""))
-            total_count = str(val + 1)
-        except Exception:
-            pass
 
     return total_count, days_data
 
