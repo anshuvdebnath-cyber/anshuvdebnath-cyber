@@ -56,7 +56,7 @@ When I'm not in my IDE debugging routes or writing algorithms:
 
 <p align="center">
   <a href="https://github.com/anshuvdebnath-cyber?tab=overview">
-    <img src="assets/github-contributions.svg?v=18" alt="GitHub Contributions" width="100%" />
+    <img src="assets/github-contributions.svg?v=19" alt="GitHub Contributions" width="100%" />
   </a>
 </p>
 
