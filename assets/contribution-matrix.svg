@@ -185,7 +185,7 @@
 </defs>
   <rect width="890" height="218" rx="8" class="card-bg"/>
   <circle cx="26" cy="30" r="3.5" fill="#22d3ee" class="live-beacon"/>
-  <text x="40" y="34" class="card-title">279 contributions in the last year</text>
+  <text x="40" y="34" class="card-title">282 contributions in the last year</text>
   <text x="862" y="34" class="label-sub" text-anchor="end">Oct 2025 &#8211; Oct 2026</text>
   <text x="48.0" y="60" class="label-month">Oct</text>
   <text x="108.0" y="60" class="label-month">Nov</text>
@@ -672,7 +672,7 @@
     <g><title>No contributions on October 10th.</title><rect x="813.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   </g>
   <g class="col-wave w-52">
-    <g><title>28 contributions on October 11th.</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-17"/></g>
+    <g><title>31 contributions on October 11th.</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-17"/></g>
     <g><title>No contributions</title><rect x="828.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions</title><rect x="828.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions</title><rect x="828.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
