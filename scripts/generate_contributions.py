@@ -167,25 +167,31 @@ def main():
     print(f"Total days mapped: {len(days_data)}")
 
     primary_svg = "assets/github-contributions.svg"
+    with open(primary_svg, "r", encoding="utf-8") as f:
+        existing_svg = f.read()
+
     new_svg = generate_svg(total_count, days_data, primary_svg)
 
-    with open(primary_svg, "w", encoding="utf-8") as f:
-        f.write(new_svg)
-    print(f"Updated {primary_svg}")
+    if new_svg != existing_svg:
+        with open(primary_svg, "w", encoding="utf-8") as f:
+            f.write(new_svg)
+        print(f"Updated {primary_svg}")
 
-    # Sync aliases
-    aliases = [
-        "assets/contribution-chart.svg",
-        "assets/contribution-matrix.svg",
-        "assets/constellation-contrib.svg"
-    ]
-    for alias in aliases:
-        if os.path.exists(alias):
-            shutil.copy2(primary_svg, alias)
-            print(f"Synced {alias}")
+        # Sync aliases
+        aliases = [
+            "assets/contribution-chart.svg",
+            "assets/contribution-matrix.svg",
+            "assets/constellation-contrib.svg"
+        ]
+        for alias in aliases:
+            if os.path.exists(alias):
+                shutil.copy2(primary_svg, alias)
+                print(f"Synced {alias}")
 
-    update_readme_cache_bust()
-    print("All contribution SVGs successfully updated with live data!")
+        update_readme_cache_bust()
+        print("All contribution SVGs successfully updated with live data!")
+    else:
+        print("No changes in contribution data. Skipping unnecessary file updates.")
 
 if __name__ == "__main__":
     main()

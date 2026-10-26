@@ -67,9 +67,9 @@ When I'm not in my IDE debugging routes or writing algorithms:
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/anshuvdebnath-cyber/HACK-SYNTHESIS-3.0">⚡ REPOVITAL (HACK-SYNTHESIS-3.0)</a></h4>
-      <p>Academic-grade software health & reproducibility platform powered by the MALTA mathematical framework to detect upstream abandonment and technical lag.</p>
-      <code>TypeScript</code> &bull; <code>React</code> &bull; <code>Tailwind</code> &bull; <code>Node.js</code> &bull; <code>Vite</code>
+      <h4><a href="https://github.com/anshuvdebnath-cyber/BUILD-BATTLE-HACKATHON">🌊 InsightFlow (BUILD-BATTLE-HACKATHON)</a></h4>
+      <p>Intelligent customer decision platform built for Build Battle 2026, analyzing customer feedback signals to predict churn risk and prioritize engineering fixes.</p>
+      <code>TypeScript</code> &bull; <code>React 19</code> &bull; <code>Tailwind v4</code> &bull; <code>Express</code> &bull; <code>AI / LLM</code>
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/anshuvdebnath-cyber/HACKRIT-HACKATHON-2026">🏔️ HimVigil (HACKRIT-HACKATHON-2026)</a></h4>

@@ -2,7 +2,7 @@ name: Update Contribution Chart
 
 on:
   schedule:
-    - cron: "0 */2 * * *" # Runs every 2 hours automatically to capture commits across all repos
+    - cron: "0 */6 * * *" # Runs every 6 hours automatically to capture commits across all repos
   push:
     branches:
       - main
@@ -12,6 +12,7 @@ on:
       - "assets/contribution-matrix.svg"
       - "assets/constellation-contrib.svg"
       - "profile-3d-contrib/**"
+      - "README.md"
   workflow_dispatch: # Allows manual on-demand trigger from GitHub Actions tab
 
 permissions:
@@ -40,6 +41,7 @@ jobs:
           git add assets/github-contributions.svg assets/contribution-chart.svg assets/contribution-matrix.svg assets/constellation-contrib.svg README.md
           if ! git diff --staged --quiet; then
             git commit -m "chore(contrib): auto-update live contribution chart [skip ci]"
+            git pull --rebase origin main || true
             git push
           else
             echo "No changes in contribution data."

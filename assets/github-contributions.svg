@@ -185,7 +185,7 @@
 </defs>
   <rect width="890" height="218" rx="8" class="card-bg"/>
   <circle cx="26" cy="30" r="3.5" fill="#22d3ee" class="live-beacon"/>
-  <text x="40" y="34" class="card-title">281 contributions in the last year</text>
+  <text x="40" y="34" class="card-title">336 contributions in the last year</text>
   <text x="862" y="34" class="label-sub" text-anchor="end">Oct 2025 &#8211; Oct 2026</text>
   <text x="48.0" y="60" class="label-month">Oct</text>
   <text x="108.0" y="60" class="label-month">Nov</text>
@@ -614,65 +614,65 @@
     <g><title>4 contributions on September 8th.</title><rect x="723.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-15"/></g>
     <g><title>No contributions on September 9th.</title><rect x="723.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on September 10th.</title><rect x="723.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>17 contributions on September 11th.</title><rect x="723.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-16"/></g>
-    <g><title>25 contributions on September 12th.</title><rect x="723.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-17"/></g>
+    <g><title>17 contributions on September 11th.</title><rect x="723.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell async-16"/></g>
+    <g><title>25 contributions on September 12th.</title><rect x="723.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-17"/></g>
   </g>
   <g class="col-wave w-46">
     <g><title>1 contribution on September 13th.</title><rect x="738.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-0"/></g>
-    <g><title>2 contributions on September 14th.</title><rect x="738.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-1"/></g>
+    <g><title>3 contributions on September 14th.</title><rect x="738.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-1"/></g>
     <g><title>No contributions on September 15th.</title><rect x="738.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on September 16th.</title><rect x="738.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on September 17th.</title><rect x="738.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>1 contribution on September 18th.</title><rect x="738.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-2"/></g>
-    <g><title>No contributions on September 19th.</title><rect x="738.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+    <g><title>16 contributions on September 19th.</title><rect x="738.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell async-3"/></g>
   </g>
   <g class="col-wave w-47">
-    <g><title>No contributions on September 20th.</title><rect x="753.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+    <g><title>26 contributions on September 20th.</title><rect x="753.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-4"/></g>
     <g><title>No contributions on September 21st.</title><rect x="753.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>No contributions on September 22nd.</title><rect x="753.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+    <g><title>1 contribution on September 22nd.</title><rect x="753.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-5"/></g>
     <g><title>No contributions on September 23rd.</title><rect x="753.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>1 contribution on September 24th.</title><rect x="753.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-3"/></g>
-    <g><title>1 contribution on September 25th.</title><rect x="753.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-4"/></g>
-    <g><title>1 contribution on September 26th.</title><rect x="753.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-5"/></g>
+    <g><title>1 contribution on September 24th.</title><rect x="753.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-6"/></g>
+    <g><title>1 contribution on September 25th.</title><rect x="753.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-7"/></g>
+    <g><title>1 contribution on September 26th.</title><rect x="753.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-8"/></g>
   </g>
   <g class="col-wave w-48">
     <g><title>No contributions on September 27th.</title><rect x="768.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on September 28th.</title><rect x="768.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>2 contributions on September 29th.</title><rect x="768.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-6"/></g>
-    <g><title>5 contributions on September 30th.</title><rect x="768.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-7"/></g>
+    <g><title>2 contributions on September 29th.</title><rect x="768.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-9"/></g>
+    <g><title>5 contributions on September 30th.</title><rect x="768.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-10"/></g>
     <g><title>No contributions on October 1st.</title><rect x="768.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on October 2nd.</title><rect x="768.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on October 3rd.</title><rect x="768.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   </g>
   <g class="col-wave w-49">
-    <g><title>4 contributions on October 4th.</title><rect x="783.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-8"/></g>
-    <g><title>41 contributions on October 5th.</title><rect x="783.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-9"/></g>
-    <g><title>1 contribution on October 6th.</title><rect x="783.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-10"/></g>
-    <g><title>16 contributions on October 7th.</title><rect x="783.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-11"/></g>
-    <g><title>3 contributions on October 8th.</title><rect x="783.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-12"/></g>
-    <g><title>2 contributions on October 9th.</title><rect x="783.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-13"/></g>
+    <g><title>4 contributions on October 4th.</title><rect x="783.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-11"/></g>
+    <g><title>41 contributions on October 5th.</title><rect x="783.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-12"/></g>
+    <g><title>1 contribution on October 6th.</title><rect x="783.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-13"/></g>
+    <g><title>16 contributions on October 7th.</title><rect x="783.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#8b5cf6" stroke="#a78bfa" stroke-width="0.6" class="cell async-14"/></g>
+    <g><title>3 contributions on October 8th.</title><rect x="783.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-15"/></g>
+    <g><title>2 contributions on October 9th.</title><rect x="783.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-16"/></g>
     <g><title>No contributions on October 10th.</title><rect x="783.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   </g>
   <g class="col-wave w-50">
-    <g><title>31 contributions on October 11th.</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-14"/></g>
-    <g><title>21 contributions on October 12th.</title><rect x="798.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-15"/></g>
-    <g><title>7 contributions on October 13th.</title><rect x="798.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-16"/></g>
-    <g><title>2 contributions on October 14th.</title><rect x="798.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-17"/></g>
+    <g><title>31 contributions on October 11th.</title><rect x="798.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#22d3ee" stroke="#67e8f9" stroke-width="0.6" class="cell async-17"/></g>
+    <g><title>21 contributions on October 12th.</title><rect x="798.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#14b8a6" stroke="#2dd4bf" stroke-width="0.6" class="cell async-0"/></g>
+    <g><title>7 contributions on October 13th.</title><rect x="798.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-1"/></g>
+    <g><title>2 contributions on October 14th.</title><rect x="798.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-2"/></g>
     <g><title>No contributions on October 15th.</title><rect x="798.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions on October 16th.</title><rect x="798.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>1 contribution on October 17th.</title><rect x="798.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-0"/></g>
+    <g><title>1 contribution on October 17th.</title><rect x="798.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-3"/></g>
   </g>
   <g class="col-wave w-51">
-    <g><title>1 contribution on October 18th.</title><rect x="813.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-1"/></g>
-    <g><title>3 contributions on October 19th.</title><rect x="813.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-2"/></g>
-    <g><title>4 contributions on October 20th.</title><rect x="813.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-3"/></g>
-    <g><title>3 contributions on October 21st.</title><rect x="813.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-4"/></g>
+    <g><title>1 contribution on October 18th.</title><rect x="813.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-4"/></g>
+    <g><title>3 contributions on October 19th.</title><rect x="813.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-5"/></g>
+    <g><title>4 contributions on October 20th.</title><rect x="813.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-6"/></g>
+    <g><title>3 contributions on October 21st.</title><rect x="813.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-7"/></g>
     <g><title>No contributions on October 22nd.</title><rect x="813.0" y="132.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
-    <g><title>No contributions on October 23rd.</title><rect x="813.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+    <g><title>8 contributions on October 23rd.</title><rect x="813.0" y="147.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-8"/></g>
     <g><title>No contributions on October 24th.</title><rect x="813.0" y="162.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
   </g>
   <g class="col-wave w-52">
-    <g><title>No contributions on October 25th.</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
+    <g><title>3 contributions on October 25th.</title><rect x="828.0" y="72.0" width="11.5" height="11.5" rx="2.5" fill="#4c1d95" stroke="#5b21b6" stroke-width="0.6" class="cell async-9"/></g>
     <g><title>No contributions on October 26th.</title><rect x="828.0" y="87.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions</title><rect x="828.0" y="102.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
     <g><title>No contributions</title><rect x="828.0" y="117.0" width="11.5" height="11.5" rx="2.5" fill="#16152b" stroke="#262447" stroke-width="0.6" class="cell"/></g>
